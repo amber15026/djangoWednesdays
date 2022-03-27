@@ -5,6 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <center>
+        <h1>Hello {{ first_name }}</h1>
+        {{ year }}
+        <br>
+        {{ month }}
+        <br>
+        {{ month_number }}
+        <br>
+        {{ cal|safe }}
+        <br>
+        {{ time }}
+    </center>
 </body>
 </html>
