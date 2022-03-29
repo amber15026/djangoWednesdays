@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <center>
-        <h1>Hello {{ first_name }}</h1>
-        {{ year }}
-        <br>
-        {{ month }}
-        <br>
-        {{ month_number }}
-        <br>
-        {{ cal|safe }}
-        <br>
-        {{ time }}
-    </center>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<center>
+    <h1>Hello {{ first_name }}</h1>
+    {{ year }}
+    <br>
+    {{ month }}
+    <br>
+    {{ month_number }}
+    <br>
+    {{ cal|safe }}
+    <br>
+    {{ time }}
+</center>
+{% endblock %}
